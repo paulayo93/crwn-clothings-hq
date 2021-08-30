@@ -49,7 +49,7 @@ class SignUp extends React.Component {
 
     }
 
-    handleChange = evnet => {
+    handleChange = event => {
         // eslint-disable-next-line no-restricted-globals
         const {name, value} = event.target;
 
