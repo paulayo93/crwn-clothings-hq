@@ -49,12 +49,12 @@ export const convertCollectionsSnapShotToMap = (collections) => {
         return {
             routeName: encodeURI(title.toLowerCase()),
             id: doc.id,
-            title, 
+            title,
             items
         }
     });
 
-    transformedCollection.reduce((accumulator, collection) => {
+    return transformedCollection.reduce((accumulator, collection) => {
         accumulator[collection.title.toLowerCase()] = collection;
         return accumulator;
     }, {});
