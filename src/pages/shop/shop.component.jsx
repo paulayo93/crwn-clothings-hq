@@ -8,12 +8,11 @@ import CollectionsOverviewContainer from "../../components/collection-overview/c
 
 const ShopPage = ({fetchCollectionsStart, match }) =>  {
 
-
  useEffect(() => {
    fetchCollectionsStart();
  }, [fetchCollectionsStart])
 
-
+    console.log(`${match.path}`)
     return (
     <div className='shop-page'>
 
