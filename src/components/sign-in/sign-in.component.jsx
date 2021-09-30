@@ -7,7 +7,7 @@ import {connect} from 'react-redux';
 
 const SignIn = ({emailSignInStart, googleSignInStart}) => {
 
-    const [userCredentials, setUserCredentials] = useState({name: '', email: ''})
+    const [userCredentials, setUserCredentials] = useState({email: '', password: ''})
     const {email, password} = userCredentials;
 
     const handleSubmit = async event => {
@@ -43,6 +43,7 @@ const SignIn = ({emailSignInStart, googleSignInStart}) => {
                     value={password}
                     label="Password"
                     required
+                    className={'wdth'}
                 />
                 <div className='buttons'>
                     <CustomButton type='submit'>
