@@ -37,6 +37,7 @@ const CartDropDown = () => {
     )
 }
 
+// eslint-disable-next-line no-unused-vars
 const mapStateToProps = createStructuredSelector({
     cartItems: selectCartItems
 });
